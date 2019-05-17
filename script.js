@@ -1,4 +1,4 @@
 function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
-    $('.container').addClass('dark');
+    $('#theme').addClass('dark');
     $('h2').addClass('darkmode');
 })}

@@ -1,7 +1,3 @@
-$('#switch').on('click', () => {
-    if ($('#switch').prop('checked')) {
-        $('.wrapper').addClass('dark');
-    } else {
-        $('.wrapper').removeClass('dark');
-    }
-})
+function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
+    $('.container').addClass('dark');
+})}

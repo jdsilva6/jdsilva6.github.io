@@ -64,7 +64,7 @@
         color: #eee;
     }
 
-    body.dark-mode {
+    .dark-mode {
       background-color: #111!important;
       color: #eee;
     }

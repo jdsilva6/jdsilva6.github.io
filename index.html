@@ -7,13 +7,6 @@
   <script>
     window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-139134970-1');
-
     function toggleDarkLight() {
       var body = document.getElementById("body");
       var currentClass = body.className;
@@ -21,113 +14,22 @@
     }
   </script>
   <!-- End of Script -->
-  <style>
-    html {
-      scroll-behavior: smooth !important;
-      font-family: 'Open Sans', sans-serif !important;
-    }
-
-    .nav li {
-      display: inline-block;
-    }
-
-    div.panel-group {
-      outline: 2px;
-      outline-color: lightslategray;
-    }
-
-    div.stylized {
-      padding: 1%;
-      background-color: #EDE5F6;
-      fill-opacity: 50%;
-      width: 100%;
-    }
-
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      max-height: 600px;
-    }
-
-    .center2 {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-
-    .center3 {
-      width: 300px;
-      padding-top: 1rem;
-    }
-
-    a.stylized {
-      color: #B24DFF;
-    }
-
-    b.stylized {
-      color: black;
-      font-weight: normal;
-    }
-
-    body {
-      padding: 0;
-      margin: 0;
-    }
-
-    .imgTable {
-      max-width: 300px;
-      transform: translateX(50%);
-    }
-
-    body.dark-mode {
-      background-color: #111!important;
-      color: #eee;
-    }
-
-    body.dark-mode a {
-      color: #111;
-    }
-
-    body.dark-mode button {
-      background-color: #eee;
-      color: #111;
-    }
-
-    body.light-mode {
-      background-color: #eee;
-      color: #111;
-    }
-
-    body.light-mode a {
-      color: #111;
-    }
-
-    body.light-mode button {
-      background-color: #111;
-      color: #eee;
-    }
-  </style>
 
 
   <meta charset=" utf-8">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   <title>Joshua D'Silva's Website</title>
-  <script src="script.js" defer=""></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
+  <script src="script.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
@@ -169,7 +71,7 @@
     </li>
     <li class="nav-item active">
       <button class="btn btn-link" type="button" name="dark_light" onclick="toggleDarkLight()"
-          title="Toggle dark/light mode">Dark Mode</button>
+        title="Toggle dark/light mode">Dark Mode</button>
     </li>
   </ul>
 </nav>
@@ -190,7 +92,7 @@
 
     <h2 id="awards">Awards</h2>
     <div class="stylized">
-      <section >
+      <section>
         <ul>
           <li>Class Valedictorian (2016)</li>
           <li>RBC Make 150 Count Award (2017)</li>

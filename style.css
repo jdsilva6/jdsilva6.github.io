@@ -188,3 +188,8 @@
   .darkCardHeader {
     background: #4f2683!important;
   }
+
+  .darkbtn {
+    background: #4f2683!important;
+    color: white;
+  }

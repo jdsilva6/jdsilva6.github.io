@@ -3,6 +3,10 @@
       font-family: 'Open Sans', sans-serif !important;
     }
 
+    .card{
+      position: unset!important;
+    }
+
     .navbar {
       overflow: hidden;
       background-color: white;

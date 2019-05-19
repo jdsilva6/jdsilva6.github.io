@@ -181,5 +181,6 @@
 
   .darkCard {
     background: #807F83;
-    color: #000;
+    color: #111;
+    transition: 1s all ease;
   }

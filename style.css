@@ -172,5 +172,6 @@
 }
 
 .darkjumbo{
-  background: #807F83;
+  background: #807F83!important;
+  transition: 1s all ease!important;
 }

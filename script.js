@@ -4,5 +4,5 @@ function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
     $('#body').addClass('dark-mode')
     $(".stylizedDiv").addClass('divdark')
     $('#jumbo').addClass('darkjumbo')
-    $("#myPic img").attr("src", "assets/images/Engineer_Stacked_Reversed.png")
+    $("#myPic").attr("src", "assets/images/Engineer_Stacked_Reversed.png")
 })}

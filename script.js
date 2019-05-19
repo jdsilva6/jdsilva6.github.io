@@ -4,6 +4,7 @@ function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
     $('#body').addClass('dark-mode')
     $(".stylizedDiv").addClass('divdark')
     $('.card-body').addClass('darkCard')
+    $('.card-header').addClass('darkCardHeader')
     $('#jumbo').addClass('darkjumbo')
     $("#myPic").attr("src", "assets/images/Engineer_Stacked_Reversed.png")
 })}

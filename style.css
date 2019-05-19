@@ -184,3 +184,7 @@
     color: white;
     transition: 1s all ease;
   }
+
+  .darkCardHeader {
+    background: #4f2683;
+  }

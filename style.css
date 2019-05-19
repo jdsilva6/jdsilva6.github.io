@@ -29,7 +29,7 @@
       outline-color: lightslategray;
     }
 
-    div.stylizedDiv {
+    .stylizedDiv {
       padding: 1%;
       background-color: #EDE5F6;
       fill-opacity: 50%;

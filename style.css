@@ -11,6 +11,10 @@
       width: 100%!important; /* Full width */
     }
 
+    .jumbotron{
+      top: 1!important;
+    }
+
     .nav li {
       display: inline-block;
     }

@@ -70,6 +70,10 @@
     font-weight: normal;
   }
 
+  .darkb{
+    color: white!important;
+  }
+
   body {
     padding: 0;
     margin: 0;

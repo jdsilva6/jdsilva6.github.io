@@ -3,6 +3,7 @@ function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
     $('h2').addClass('darkmode');
     $('#body').addClass('dark-mode')
     $(".stylizedDiv").addClass('divdark')
+    $(".stylized").addClass('darkb')
     $('.card-body').addClass('darkCard')
     $('.card-header').addClass('darkCardHeader')
     $('#jumbo').addClass('darkjumbo')

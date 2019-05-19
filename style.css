@@ -3,10 +3,6 @@
       font-family: 'Open Sans', sans-serif !important;
     }
 
-    .accordion{
-      
-    }
-
     .navbar {
       overflow: hidden;
       background-color: white;
@@ -18,7 +14,6 @@
     .jumbotron{
       top: 5!important;
       padding-top: 5rem!important;
-      position: relative;
     }
 
     .nav li {
@@ -69,7 +64,6 @@
     }
 
     body {
-      padding-top: 4rem;
       padding: 0;
       margin: 0;
     }

@@ -27,3 +27,25 @@ function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
     $("#myPic").attr("src", "assets/images/Engineer_Stacked_PurpleGrey.png")
     $("#darkModeSwitch").attr("onclick", "toggleDarkLight()")
 })}
+
+function rotateToggler(){$('#togglerIcon').on('click',()=>{
+    var rotated = false;
+      if (!rotated) {
+        $(this).find("span").css({
+          "-moz-transform": "rotate(90deg)",
+           "-webkit-transform": "rotate(90deg)",
+            "-o-transform": "rotate(90deg)",
+             "-ms-transform": "rotate(90deg)",
+              "transform": "rotate(90deg)"
+        });
+      } else {
+        $(this).find("span").css({
+          "-moz-transform": "rotate(0deg)",
+           "-webkit-transform": "rotate(0deg)",
+            "-o-transform": "rotate(0deg)",
+             "-ms-transform": "rotate(0deg)",
+              "transform": "rotate(0deg)"
+        });
+      }
+})
+}

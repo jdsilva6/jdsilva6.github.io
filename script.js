@@ -32,6 +32,6 @@ function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
     $("#darkModeSwitch").attr("onclick", "toggleDarkLight()")
 })}
 
-function rotateToggler(){$('#togglerIcon').on('click', () => {
+/* function rotateToggler(){$('#togglerIcon').on('click', () => {
     $('#togglerIcon').addClass('rotated')
-})}
+})} */

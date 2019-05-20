@@ -2,7 +2,7 @@
     scroll-behavior: smooth !important;
     font-family: 'Open Sans', sans-serif !important;
   }
-  
+
 
   .card {
     position: unset !important;
@@ -69,12 +69,24 @@
   b.stylized {
     color: black;
     font-weight: normal;
-    float: left!important;
+    float: left !important;
     text-align: left;
   }
 
-  .darkb{
-    color: white!important;
+  .rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+  }
+
+  .rotate.down {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .darkb {
+    color: white !important;
   }
 
   body {
@@ -193,10 +205,10 @@
   }
 
   .darkCardHeader {
-    background: #4f2683!important;
+    background: #4f2683 !important;
   }
 
   .darkbtn {
-    background: #4f2683!important;
-    color: white!important;
+    background: #4f2683 !important;
+    color: white !important;
   }

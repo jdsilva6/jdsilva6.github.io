@@ -2,6 +2,7 @@
     scroll-behavior: smooth !important;
     font-family: 'Open Sans', sans-serif !important;
   }
+  
 
   .card {
     position: unset !important;
@@ -69,6 +70,7 @@
     color: black;
     font-weight: normal;
     float: left!important;
+    text-align: left;
   }
 
   .darkb{

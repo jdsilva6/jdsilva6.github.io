@@ -19,8 +19,8 @@ function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
 
 function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
     $('#darkModeSwitch').html("Dark")
-    $('#theme').removeClass('dark');
-    $('h2').removeClass('darkmode');
+    $('#theme').removeClass('dark')
+    $('h2').removeClass('darkmode')
     $('#body').removeClass('dark-mode')
     $(".stylizedDiv").removeClass('divdark')
     $(".stylized").removeClass('darkb')
@@ -30,4 +30,8 @@ function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
     $('.btn').removeClass('darkbtn')
     $("#myPic").attr("src", "assets/images/Engineer_Stacked_PurpleGrey.png")
     $("#darkModeSwitch").attr("onclick", "toggleDarkLight()")
+})}
+
+function rotateToggler(){$('#togglerIcon').on('click', () => {
+    $('#togglerIcon').addClass('rotated')
 })}

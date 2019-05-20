@@ -68,6 +68,7 @@
   b.stylized {
     color: black;
     font-weight: normal;
+    float: left;
   }
 
   .darkb{

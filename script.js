@@ -15,6 +15,7 @@ function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
     $('.btn').addClass('darkbtn')
     $("#myPic").attr("src", "assets/images/Engineer_Stacked_Reversed.png")
     $("#darkModeSwitch").attr("onclick", "toggleLightMode()")
+    $("#navColor").addClass('darkNavbar')
 })}
 
 function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{

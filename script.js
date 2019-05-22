@@ -13,6 +13,7 @@ function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
     $('.card-header').addClass('darkCardHeader')
     $('#jumbo').addClass('darkjumbo')
     $('.btn').addClass('darkbtn')
+    $("navColor").addClass("navbar dark")
     $("#myPic").attr("src", "assets/images/Engineer_Stacked_Reversed.png")
     $("#darkModeSwitch").attr("onclick", "toggleLightMode()")
     $("#navColor").attr("class","navbar navbar-expand-lg navbar-dark")
@@ -30,6 +31,7 @@ function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
     $('#jumbo').removeClass('darkjumbo')
     $('.btn').removeClass('darkbtn')
     $("#myPic").attr("src", "assets/images/Engineer_Stacked_PurpleGrey.png")
+    $("navColor").removeClass("navbar dark")
     $("#navColor").attr('class','navbar navbar-expand-lg navbar-light')
     $("#darkModeSwitch").attr("onclick", "toggleDarkLight()")
 })}

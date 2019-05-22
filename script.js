@@ -30,6 +30,7 @@ function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
     $('#jumbo').removeClass('darkjumbo')
     $('.btn').removeClass('darkbtn')
     $("#myPic").attr("src", "assets/images/Engineer_Stacked_PurpleGrey.png")
+    $("#navColor").removeClass('darkNavbar')
     $("#darkModeSwitch").attr("onclick", "toggleDarkLight()")
 })}
 

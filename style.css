@@ -19,6 +19,18 @@
     /* Full width */
   }
 
+  .navbar.dark {
+    overflow: hidden;
+    background-color: black!important;
+    position: fixed !important;
+    /* Set the navbar to fixed position */
+    top: 0 !important;
+    /* Position the navbar at the top of the page */
+    width: 100% !important;
+    /* Full width */
+  }
+
+
   .jumbotron {
     top: 5 !important;
     padding-top: 5rem !important;

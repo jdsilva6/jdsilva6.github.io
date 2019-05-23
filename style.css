@@ -21,7 +21,7 @@
 
   .navbar.dark {
     overflow: hidden;
-    background-color: black!important;
+    background-color: black !important;
     position: fixed !important;
     /* Set the navbar to fixed position */
     top: 0 !important;
@@ -222,5 +222,3 @@
     background: #4f2683 !important;
     color: white !important;
   }
-
- 

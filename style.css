@@ -11,7 +11,7 @@
   .navbar {
     overflow: hidden;
     position: fixed !important;
-    background-color: #eee;
+    background-color: white;
     /* Set the navbar to fixed position */
     top: 0 !important;
     /* Position the navbar at the top of the page */

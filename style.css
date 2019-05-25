@@ -10,8 +10,8 @@
 
   .navbar {
     overflow: hidden;
-    background-color: white;
     position: fixed !important;
+    background-color: #eee;
     /* Set the navbar to fixed position */
     top: 0 !important;
     /* Position the navbar at the top of the page */

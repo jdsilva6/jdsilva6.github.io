@@ -2,6 +2,10 @@ $(".rotate").click(function () {
     $(this).toggleClass("down");
 })
 
+function animateName(){
+    $('#WelcomeMsg').fadeIn();
+}
+
 function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
     $('#darkModeSwitch').html("Light")
     $('#theme').addClass('dark');

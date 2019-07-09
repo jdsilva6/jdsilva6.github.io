@@ -3,7 +3,7 @@ $(".rotate").click(function () {
 })
 
 function animateName(){
-    $('#WelcomeMsg').fadeIn().attr("display","inline");
+    $('#WelcomeMsg').fadeIn("slow").attr("display","inline");
 }
 
 function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {

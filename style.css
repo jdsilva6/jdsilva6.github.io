@@ -8,6 +8,10 @@
     position: unset !important;
   }
 
+  #WelcomeMsg{
+    display: none;
+  }
+
   .navbar {
     overflow: hidden;
     position: fixed !important;

@@ -2,8 +2,10 @@ $(".rotate").click(function () {
     $(this).toggleClass("down");
 })
 
-function animateName(){
+function animate(){
     $('#WelcomeMsg').fadeIn("slow").attr("display","inline");
+    $('#profilepic').fadeIn("slow").attr("display","inline");
+    $('#university').fadeIn("slow").attr("display","inline");
 }
 
 function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {

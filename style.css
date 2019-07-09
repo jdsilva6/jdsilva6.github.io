@@ -12,6 +12,14 @@
     display: none;
   }
 
+  #profilepic{
+    display: none;
+  }
+
+  #univeristy{
+    display: none;
+  }
+
   .navbar {
     overflow: hidden;
     position: fixed !important;

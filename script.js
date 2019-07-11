@@ -93,8 +93,7 @@ var Messenger = function(el){
       var random_text = '';
       while(random_text.length < length){
         random_text += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
-      } 
-      
+      }
       return random_text;
     };
     

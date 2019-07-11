@@ -52,7 +52,7 @@ function toggleDarkLight(){
     $("#darkModeSwitch").attr("onclick", "toggleLightMode()");
 }
 
-function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
+function toggleLightMode(){
     $('#darkModeSwitch').html("Dark")
     $('#theme').removeClass('dark')
     $('h2').removeClass('darkmode')
@@ -67,7 +67,7 @@ function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
     $('.btn').removeClass('darkbtn')
     $("#univeristy").attr("src", "assets/images/Engineer_Stacked_PurpleGrey.png")
     $("#darkModeSwitch").attr("onclick", "toggleDarkLight()")
-})}
+}
 
 var Messenger = function(el){
     'use strict';

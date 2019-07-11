@@ -35,7 +35,7 @@ function CollapseAll(){
     $("#ExpandAll").attr("onclick", "ExpandAll()");
 }
 
-function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
+function toggleDarkLight(){
     $('#darkModeSwitch').html("Light");
     $('#theme').addClass('dark');
     $('h2').addClass('darkmode');
@@ -50,7 +50,7 @@ function toggleDarkLight(){$('#darkModeSwitch').on('click', () => {
     $('.btn').addClass('darkbtn');
     $("#univeristy").attr("src", "assets/images/Engineer_Stacked_Reversed.png");
     $("#darkModeSwitch").attr("onclick", "toggleLightMode()");
-})}
+}
 
 function toggleLightMode(){$('#darkModeSwitch').on('click',() =>{
     $('#darkModeSwitch').html("Dark")

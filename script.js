@@ -80,9 +80,10 @@ var Messenger = function(el){
       m.current_length = 0;
       m.fadeBuffer = false;
       m.messages = [
-        "Welcome to Joshua D'Silva's Site",
+        "Joshua D'Silva's Site",
         'Hope you like it',
-        'Cool.'
+        'Made it myself.',
+        'Thanks for sticking around'
       ];
       
       setTimeout(m.animateIn, 100);

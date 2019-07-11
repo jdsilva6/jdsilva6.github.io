@@ -9,15 +9,23 @@
   }
 
   #WelcomeMsg{
-    display: none;
+    color: #000;
+  }
+
+  #JoshDescription{
+    color: #000;
   }
 
   #profilepic{
-    display: none;
   }
 
-  #univeristy{
-    display: none;
+  #jumbo{
+    background-color: #E6E6FA;
+    border-radius: 15px;
+  }
+
+  .joblogo{
+    width: 5%;
   }
 
   .navbar {
@@ -42,6 +50,11 @@
     /* Full width */
   }
 
+  .jobDates{
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
 
   .jumbotron {
     top: 5 !important;
@@ -62,6 +75,7 @@
     background-color: #EDE5F6;
     fill-opacity: 50%;
     width: 100%;
+    border-radius: 15px;
   }
 
   .center {
@@ -93,6 +107,7 @@
   b.stylized {
     color: black;
     font-weight: normal;
+    font-size: 1.1rem;
     float: left !important;
     text-align: left;
   }

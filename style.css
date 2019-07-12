@@ -265,7 +265,7 @@
     width: 20%;
     }
     #messenger { 
-      min-height: 50px;
+      min-height: 100px;
       text-shadow: 0 2px 2px rgba(#000, 0.9);
     }
   } 

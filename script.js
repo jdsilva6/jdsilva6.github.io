@@ -75,7 +75,7 @@ var Messenger = function(el){
     
     
     m.init = function(){
-      m.codeletters = "10101001010";
+      m.codeletters = "10101001";
       m.message = 0;
       m.current_length = 0;
       m.fadeBuffer = false;

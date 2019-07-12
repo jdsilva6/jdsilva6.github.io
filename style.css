@@ -51,8 +51,8 @@
 
   .navbar.dark {
     overflow: hidden;
-    background-color: black !important;
     position: fixed !important;
+    background-color: black;
     /* Set the navbar to fixed position */
     top: 0 !important;
     /* Position the navbar at the top of the page */
@@ -265,7 +265,7 @@
     width: 15%;
     }
     #messenger { 
-      min-height: 100px;
+      min-height: 50px;
       text-shadow: 0 2px 2px rgba(#000, 0.9);
     }
   } 

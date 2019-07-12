@@ -75,18 +75,19 @@ var Messenger = function(el){
     
     
     m.init = function(){
-      m.codeletters = "&#*+%?£@§$";
+      m.codeletters = "10101001010";
       m.message = 0;
       m.current_length = 0;
       m.fadeBuffer = false;
       m.messages = [
         "Joshua D'Silva's Site",
-        'Hope you like it',
+        'Hope you like it.',
         'Made it myself.',
-        'Thanks for sticking around'
+        'Thanks for sticking around!',
+        'ERTW'
       ];
       
-      setTimeout(m.animateIn, 100);
+      setTimeout(m.animateIn, 150);
     };
     
     m.generateRandomString = function(length){

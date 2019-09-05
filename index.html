@@ -24,11 +24,12 @@
 
 
   <meta charset=" utf-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <title id="title">Joshua D'Silva's Website</title>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -47,7 +48,7 @@
   <meta property="og:image" content="assets/images/StarryNight.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="assets/images/theflash.png" rel="icon">
-  <script src="script.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <div id="navColor" class="navbar navbar-expand-lg navbar-light" role="navigation">
@@ -93,7 +94,7 @@
 <body onload="animate()" id="body">
   <div class="container" id="theme">
 
-    <div class="jumbotron text-center" id="jumbo">
+    <div class="jumbotron text-center" data-aos="slide-up" data-aos-duration="1000" id="jumbo">
       <section id="intro">
         <h1 id="messenger"><span></span></h1>
         <p id="JoshDescription"> I am a third year software engineering student at Western University (UWO), currently
@@ -105,13 +106,10 @@
       </section>
     </div>
 
-    <div id="awards"></div>
-    <br>
-    <br>
-    <br>
-    <h2>Awards</h2>
-    <div class="stylizedDiv">
-      <section>
+    <div id="awards">
+      <br>
+      <h2>Awards</h2>
+      <div class="stylizedDiv" data-aos="slide-up" data-aos-anchor=".Awards" data-aos-duration="1000">
         <ul>
           <li>Class Valedictorian</li>
           <li>RBC Make 150 Count Award</li>
@@ -121,32 +119,28 @@
           <li>Computer Engineering Award</li>
           <li>SynerVoice Communication Award</li>
         </ul>
+      </div>
     </div>
+    <br>
 
-    <div>
-      &NonBreakingSpace;
-    </div>
-
-    <h2>Interests</h2>
-    <div class="stylizedDiv">
-      <ul>
-        <li>Artificial intelligence</li>
-        <li>Stocks/IPOs</i></li>
-        <li>Autonomous Driving</li>
-        <li>DC Comics</li>
-        <li>Marvel</li>
-      </ul>
-    </div>
-    </section>
-    <div>
-      &NonBreakingSpace;
+    <div id="Interests" data-aos="slide-up" data-aos-anchor=".awards" data-aos-duration="1000">
+      <h2>Interests</h2>
+      <div class="stylizedDiv">
+        <ul>
+          <li>Artificial intelligence <i class="fas fa-robot"></i></li>
+          <li>Stocks/IPOs <i class="fas fa-chart-line"></i></li>
+          <li>Autonomous Driving</li>
+          <li>DC Comics</li>
+          <li>Marvel</li>
+        </ul>
+      </div>
     </div>
 
     <div id="experience"></div>
     <br>
     <br>
     <br>
-    <section>
+    <section data-aos="slide-up" data-aos-anchor=".experience" data-aos-duration="1000">
       <h2>Work Experience <button class="btn btn-light" id="ExpandAll" type="button" name="Expand_btn"
           data-target=".multi-collapse" aria-expanded="false"
           aria-controls="collapseOne collapseTwo collapseThree collapseFour collapseFive collapseSix"
@@ -324,11 +318,12 @@
           </div>
         </div>
       </div>
+    </section>
 
 
       <br>
       <h2>Skills</h2>
-      <div class="stylizedDiv">
+      <div class="stylizedDiv" data-aos="slide-up" data-aos-anchor=".Skills" data-aos-duration="1000">
         <p>Here you will find a list of programming languages and tools that I have worked with.</p>
         <h3>Programming languages:</h3>
         <ul>
@@ -373,15 +368,14 @@
           <li>JQuery</li>
         </ul>
       </div>
-    </section>
 
     <div>
       &NonBreakingSpace;
     </div>
 
-    <section id="projects">
+    <section id="projects" >
       <h2>Projects</h2>
-      <div class="stylizedDiv">
+      <div class="stylizedDiv" data-aos="slide-up"  data-aos-anchor=".Projects" data-aos-duration="1000">
         <p>Here you will find a list of projects that I am working on.</p>
         <h3>Personal Website: <a href="https://joshuadsilva.com#projects">joshuadsilva.com</a> [In Progress]</h3>
         <ul>
@@ -409,6 +403,10 @@
     </footer>
   </div>
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

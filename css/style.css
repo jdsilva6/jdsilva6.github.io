@@ -51,6 +51,7 @@
       /* Position the navbar at the top of the page */
       width: 100% !important;
       /* Full width */
+      z-index: 3;
     }
 
     .navbar.dark {

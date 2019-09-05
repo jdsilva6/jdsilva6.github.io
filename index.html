@@ -1,7 +1,6 @@
 <html lang=" en">
 
 <head>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -29,11 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
   <title id="title">Joshua D'Silva's Website</title>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -42,6 +37,10 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
   <meta name="description" content="Joshua D'Silva's personal website.">
   <meta name="keywords"
     content="Joshua D'Silva, joshuaddsilva, joshuadsilva, Software Engineer, Western University, UWO, OMERS, Oxford">
@@ -93,9 +92,8 @@
 
 <body onload="animate()" id="body">
   <div class="container" id="theme">
-    <br>
-    <br>
-    <div class="jumbotron text-center animated bounceInUp" id="jumbo">
+
+    <div class="jumbotron text-center" id="jumbo">
       <section id="intro">
         <h1 id="messenger"><span></span></h1>
         <p id="JoshDescription"> I am a third year software engineering student at Western University (UWO), currently
@@ -107,100 +105,157 @@
       </section>
     </div>
 
-    <div class="animated bounceInUp delay-2s" id="awards">
-      <br>
-      <h2>Awards</h2>
-      <div class="stylizedDiv">
-        <section>
-          <ul>
-            <li>Class Valedictorian</li>
-            <li>RBC Make 150 Count Award</li>
-            <li>Western Scholarship of Distinction</li>
-            <li>Ontario Scholar</li>
-            <li>Financial Securities Award</li>
-            <li>Computer Engineering Award</li>
-            <li>SynerVoice Communication Award</li>
-          </ul>
-      </div>
+    <div id="awards"></div>
+    <br>
+    <br>
+    <br>
+    <h2>Awards</h2>
+    <div class="stylizedDiv">
+      <section>
+        <ul>
+          <li>Class Valedictorian</li>
+          <li>RBC Make 150 Count Award</li>
+          <li>Western Scholarship of Distinction</li>
+          <li>Ontario Scholar</li>
+          <li>Financial Securities Award</li>
+          <li>Computer Engineering Award</li>
+          <li>SynerVoice Communication Award</li>
+        </ul>
     </div>
 
     <div>
       &NonBreakingSpace;
     </div>
 
-    <div class=" animated bounceInUp delay-3s">
-      <h2>Interests</h2>
-      <div class="stylizedDiv">
-        <ul>
-          <li>Artificial intelligence <i class="fas fa-robot"></i></li>
-          <li>Stocks/IPOs <i class="fas fa-chart-line"></i></li>
-          <li>Autonomous Driving</li>
-          <li>DC Comics</li>
-          <li>Marvel</li>
-        </ul>
-      </div>
+    <h2>Interests</h2>
+    <div class="stylizedDiv">
+      <ul>
+        <li>Artificial intelligence</li>
+        <li>Stocks/IPOs</i></li>
+        <li>Autonomous Driving</li>
+        <li>DC Comics</li>
+        <li>Marvel</li>
+      </ul>
     </div>
     </section>
     <div>
       &NonBreakingSpace;
     </div>
 
-    <div class="animated bounceInUp delay-4s" id="experience">
-      <br>
-      <br>
-      <section>
-        <h2>Work Experience <button class="btn btn-light" id="ExpandAll" type="button" name="Expand_btn"
-            data-target=".multi-collapse" aria-expanded="false"
-            aria-controls="collapseOne collapseTwo collapseThree collapseFour collapseFive collapseSix"
-            data-toggle="collapse" title="Toggle dark/light mode" onclick="ExpandAll()">Expand All</button>
-        </h2>
-        <div class="animated bounceInUp" id="accordion">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
-                  <b class="stylized"><img class="joblogo" src="/assets/images/oxfordbox.png">&nbsp;&nbsp;&nbsp;Oxford
-                    Properties Group,
-                    Web Developer (Co-op)</b>
-                </button>
-              </h5>
-            </div>
+    <div id="experience"></div>
+    <br>
+    <br>
+    <br>
+    <section>
+      <h2>Work Experience <button class="btn btn-light" id="ExpandAll" type="button" name="Expand_btn"
+          data-target=".multi-collapse" aria-expanded="false"
+          aria-controls="collapseOne collapseTwo collapseThree collapseFour collapseFive collapseSix"
+          data-toggle="collapse" title="Toggle dark/light mode" onclick="ExpandAll()">Expand All</button>
+      </h2>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <b class="stylized"><img class="joblogo" src="/assets/images/oxfordbox.png">&nbsp;&nbsp;&nbsp;Oxford
+                  Properties Group,
+                  Web Developer (Co-op)</b>
+              </button>
+            </h5>
+          </div>
 
-            <div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne">
+          <div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne">
+            <div class="card-body">
+              <h3 class="jobDates">May 2019 - Present</h3>
+              <br>
+              <ul>
+                <li>Custom web and mobile application development, cross-application development, and application
+                  interface design</li>
+                <li>Application support, maintenance, integration, data standardization procedures & administration
+                  processes </li>
+                <li>Requirements analysis, planning and application/development documentation</li>
+                <li>End-user support of existing applications</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                aria-controls="collapseTwo">
+                <b class="stylized"><img class="joblogo" src="/assets/images/WesternBox.png">&nbsp;&nbsp;&nbsp;Western
+                  University, RezNet Technical Coordinator</b>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+              <h3 class="jobDates">Aug 2018 - April 2019</h3>
+              <br>
+              <ul>
+                Western RezNet is the university's Internet Service Provider. My position of Technical Coordinator
+                involves managing student teams and hotline operations to resolve student internet connection issues
+                across university residences.
+                <li>As part of the Bandwidth Testing team, collected and analyzed network data to optimize the firm’s
+                  new bandwidth stream.</li>
+                <li>As part of the Communications team, reviewed existing documentation in order to revamp and
+                  modernize
+                  it. Changes in documentation will be implemented in the 2018-2019 academic year.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                <b class="stylized"><img class="joblogo" src="/assets/images/OMERSBox.png">&nbsp;&nbsp;&nbsp;IT
+                  Analyst (Strategic Development) (Co-op)</b>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree">
+            <div class="card-body">
               <div class="card-body">
-                <h3 class="jobDates">May 2019 - Present</h3>
+                <h3 class="jobDates">May 2018 - August 2018</h3>
                 <br>
                 <ul>
-                  <li>Custom web and mobile application development, cross-application development, and application
-                    interface design</li>
-                  <li>Application support, maintenance, integration, data standardization procedures & administration
-                    processes </li>
-                  <li>Requirements analysis, planning and application/development documentation</li>
-                  <li>End-user support of existing applications</li>
+                  <li> Led a Co-op collaboration project designed to modernize to onboarding experience for OMERS IT
+                  </li>
+                  <li> Performed project-related activities, such as business analysis, requirements gathering and
+                    documentation</li>
+                  <li> Developed project plans to ensure that projects and assignments met deadlines</li>
+                  <li> Built applications on Microsoft SharePoint utilizing PowerApps, and Power BI </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                  aria-controls="collapseTwo">
-                  <b class="stylized"><img class="joblogo" src="/assets/images/WesternBox.png">&nbsp;&nbsp;&nbsp;Western
-                    University, RezNet Technical Coordinator</b>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo">
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                aria-expanded="false" aria-controls="collapseFour">
+                <b class="stylized"><img class="joblogo" src="/assets/images/WesternBox.png">&nbsp;&nbsp;&nbsp;Western
+                  University, RezNet Technical
+                  Consultant</b>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse multi-collapse" aria-labelledby="headingFour">
+            <div class="card-body">
               <div class="card-body">
-                <h3 class="jobDates">Aug 2018 - April 2019</h3>
+                <h3 class="jobDates">Sept 2017 - April 2018</h3>
                 <br>
                 <ul>
-                  Western RezNet is the university's Internet Service Provider. My position of Technical Coordinator
-                  involves managing student teams and hotline operations to resolve student internet connection issues
-                  across university residences.
-                  <li>As part of the Bandwidth Testing team, collected and analyzed network data to optimize the firm’s
+                  Western RezNet is the university's Internet Service Provider. My position of Technical Consultant
+                  involves helping solve customers’ network issues over the phone and in-person.
+                  <li>As part of the Bandwidth Testing team, collected and analyzed network data to optimize the
+                    firm’s
                     new bandwidth stream.</li>
                   <li>As part of the Communications team, reviewed existing documentation in order to revamp and
                     modernize
@@ -209,128 +264,69 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  <b class="stylized"><img class="joblogo" src="/assets/images/OMERSBox.png">&nbsp;&nbsp;&nbsp;IT
-                    Analyst (Strategic Development) (Co-op)</b>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree">
-              <div class="card-body">
-                <div class="card-body">
-                  <h3 class="jobDates">May 2018 - August 2018</h3>
-                  <br>
-                  <ul>
-                    <li> Led a Co-op collaboration project designed to modernize to onboarding experience for OMERS IT
-                    </li>
-                    <li> Performed project-related activities, such as business analysis, requirements gathering and
-                      documentation</li>
-                    <li> Developed project plans to ensure that projects and assignments met deadlines</li>
-                    <li> Built applications on Microsoft SharePoint utilizing PowerApps, and Power BI </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                aria-expanded="false" aria-controls="collapseFive">
+                <b class="stylized"><img class="joblogo" src="/assets/images/OMERSBox.png">&nbsp;&nbsp;&nbsp;OMERS, IT
+                  Analyst (User Device
+                  Management) (Co-op)</b>
+              </button>
+            </h5>
           </div>
-
-          <div class="card">
-            <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                  aria-expanded="false" aria-controls="collapseFour">
-                  <b class="stylized"><img class="joblogo" src="/assets/images/WesternBox.png">&nbsp;&nbsp;&nbsp;Western
-                    University, RezNet Technical
-                    Consultant</b>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFour" class="collapse multi-collapse" aria-labelledby="headingFour">
-              <div class="card-body">
-                <div class="card-body">
-                  <h3 class="jobDates">Sept 2017 - April 2018</h3>
-                  <br>
-                  <ul>
-                    Western RezNet is the university's Internet Service Provider. My position of Technical Consultant
-                    involves helping solve customers’ network issues over the phone and in-person.
-                    <li>As part of the Bandwidth Testing team, collected and analyzed network data to optimize the
-                      firm’s
-                      new bandwidth stream.</li>
-                    <li>As part of the Communications team, reviewed existing documentation in order to revamp and
-                      modernize
-                      it. Changes in documentation will be implemented in the 2018-2019 academic year.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="card">
-            <div class="card-header" id="headingFive">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
-                  aria-expanded="false" aria-controls="collapseFive">
-                  <b class="stylized"><img class="joblogo" src="/assets/images/OMERSBox.png">&nbsp;&nbsp;&nbsp;OMERS, IT
-                    Analyst (User Device
-                    Management) (Co-op)</b>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFive" class="collapse multi-collapse" aria-labelledby="headingThree">
-              <div class="card-body">
-                <h3 class="jobDates">May 2017 - August 2017</h3>
-                <br>
-                <ul>
-                  Selected by manger to assist C-Suite executives with IT Solutions (e.g. CFO, COO, CIO)
-                  <li>Oversaw projects and assisted in procurement activities</li>
-                  <li>Led project resources as co-facilitator for Summer 2017 IT networking and team-building event
-                    (50+)
-                  </li>
-                  <li>Project Manager, director and co-narrator for IT Co-op Recruitment video (published on
-                    LinkedIn)
-                  </li>
-                  <li>Educated end-users on new technologies and customized MS Office solution development
-                    (VBA/Macros,
-                    add-ins, workflow)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" id="headingSix">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
-                  aria-expanded="false" aria-controls="collapseSix">
-                  <b class="stylized"><img class="joblogo" src="/assets/images/JMBbox.png">&nbsp;&nbsp;&nbsp;JMB IT
-                    Solutions, Founder and Consultant</b>
-                </button>
-              </h5>
-            </div>
-            <div id="collapseSix" class="collapse multi-collapse" aria-labelledby="headingSix">
-              <div class="card-body">
-                <h3 class="jobDates">June 2012 - Present</h3>
-                <br>
-                <ul>
-                  <li>Trained customers on Windows/Android/iPhone, Email, Social Media (Facebook, Twitter) </li>
-                  <li>Provided technical expertise in troubleshooting to resolve IT issues </li>
-                  <li>Set up cloud-based solutions for customer’s data and media storage, and </li>
-                  <li>Set up wired/wireless networks for residential use</li>
-                </ul>
-              </div>
+          <div id="collapseFive" class="collapse multi-collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <h3 class="jobDates">May 2017 - August 2017</h3>
+              <br>
+              <ul>
+                Selected by manger to assist C-Suite executives with IT Solutions (e.g. CFO, COO, CIO)
+                <li>Oversaw projects and assisted in procurement activities</li>
+                <li>Led project resources as co-facilitator for Summer 2017 IT networking and team-building event
+                  (50+)
+                </li>
+                <li>Project Manager, director and co-narrator for IT Co-op Recruitment video (published on
+                  LinkedIn)
+                </li>
+                <li>Educated end-users on new technologies and customized MS Office solution development
+                  (VBA/Macros,
+                  add-ins, workflow)</li>
+              </ul>
             </div>
           </div>
         </div>
-    </div>
+
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                aria-expanded="false" aria-controls="collapseSix">
+                <b class="stylized"><img class="joblogo" src="/assets/images/JMBbox.png">&nbsp;&nbsp;&nbsp;JMB IT
+                  Solutions, Founder and Consultant</b>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSix" class="collapse multi-collapse" aria-labelledby="headingSix">
+            <div class="card-body">
+              <h3 class="jobDates">June 2012 - Present</h3>
+              <br>
+              <ul>
+                <li>Trained customers on Windows/Android/iPhone, Email, Social Media (Facebook, Twitter) </li>
+                <li>Provided technical expertise in troubleshooting to resolve IT issues </li>
+                <li>Set up cloud-based solutions for customer’s data and media storage, and </li>
+                <li>Set up wired/wireless networks for residential use</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-    <br>
-    <div class="animated bounceInUp delay-4s">
+      <br>
       <h2>Skills</h2>
       <div class="stylizedDiv">
         <p>Here you will find a list of programming languages and tools that I have worked with.</p>
@@ -377,7 +373,6 @@
           <li>JQuery</li>
         </ul>
       </div>
-    </div>
     </section>
 
     <div>

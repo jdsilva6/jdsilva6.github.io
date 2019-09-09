@@ -93,6 +93,10 @@
       border-radius: 15px;
     }
 
+    .stylizedDiv > p,h3,carousel{
+      padding:10px;
+    }    
+
     .center {
       display: block;
       margin-left: auto;

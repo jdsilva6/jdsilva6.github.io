@@ -94,7 +94,7 @@
 <body onload="animate()" id="body">
   <div class="container" id="theme">
 
-    <div class="jumbotron text-center" data-aos="slide-up" data-aos-duration="1000" id="jumbo">
+    <div class="jumbotron text-center" data-aos="slide-up" id="jumbo">
       <section id="intro">
         <h1 id="messenger"><span></span></h1>
         <p id="JoshDescription"> I am a third year software engineering student at Western University (UWO), currently
@@ -106,7 +106,7 @@
       </section>
     </div>
 
-    <div id="awards" data-aos="slide-up" data-aos-anchor=".intro" data-aos-duration="1000">
+    <div id="awards" data-aos="slide-up" data-aos-anchor=".intro">
       <br>
       <h2>Awards</h2>
       <div class="stylizedDiv" id="AwardsDiv">
@@ -123,7 +123,7 @@
     </div>
     <br>
 
-    <div id="Interests" data-aos="slide-up" data-aos-anchor=".AwardsDiv" data-aos-duration="1000">
+    <div id="Interests" data-aos="slide-up" data-aos-anchor=".AwardsDiv">
       <h2>Interests</h2>
       <div class="stylizedDiv">
         <ul>
@@ -140,7 +140,7 @@
     <br>
     <br>
     <br>
-    <section data-aos="slide-up" data-aos-anchor=".experience" data-aos-duration="1000">
+    <section data-aos="slide-up" data-aos-anchor=".experience">
       <h2>Work Experience <button class="btn btn-light" id="ExpandAll" type="button" name="Expand_btn"
           data-target=".multi-collapse" aria-expanded="false"
           aria-controls="collapseOne collapseTwo collapseThree collapseFour collapseFive collapseSix"
@@ -323,7 +323,7 @@
 
     <br>
     <h2>Skills</h2>
-    <div class="stylizedDiv" data-aos="slide-up" data-aos-anchor=".Interests" data-aos-duration="1000">
+    <div class="stylizedDiv" data-aos="slide-up" data-aos-anchor=".Interests">
       <p>Here you will find a list of programming languages and tools that I have worked with.</p>
       <h3>Programming languages:</h3>
       <ul>
@@ -371,7 +371,7 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="stylizedDiv" data-aos="slide-up" data-aos-anchor=".Skills" data-aos-duration="1700">
+      <div class="stylizedDiv" data-aos="slide-up" data-aos-anchor=".Skills">
         <p>Here you will find a list of projects that I am working on.</p>
         <h3>Personal Website: <a href="https://joshuadsilva.com#projects">joshuadsilva.com</a> [In Progress]</h3>
         <ul>
@@ -442,7 +442,9 @@
   </div>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1200,
+    });
   </script>
 </body>
 

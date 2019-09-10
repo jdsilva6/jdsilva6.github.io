@@ -2,6 +2,22 @@ window.onload = function onloadfunction() {
     typeMyName();
 }
 
+$(document).ready(function () {
+
+  $('.first-button').on('click', function () {
+
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click', function () {
+
+    $('.animated-icon3').toggleClass('open');
+  });
+});
+
 var i = 0;
 var name = "Welcome to Joshua D'Silva's Site";
 var speed1 = 50;

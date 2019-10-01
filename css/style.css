@@ -60,6 +60,7 @@
       z-index: 3;
     }
 
+
     .navbar.dark {
       overflow: hidden;
       position: fixed !important;
@@ -86,6 +87,15 @@
       display: inline-block;
     }
 
+    .nav-item :hover {
+      color: #4E2185 !important;
+      font-weight: 600;
+    }
+
+    .navbar-brand :hover {
+      /* Put animation for name in here*/
+    }
+
     div.panel-group {
       outline: 2px;
       outline-color: lightslategray;
@@ -105,7 +115,7 @@
       padding: 10px;
     }
 
-    .carousel-inner{
+    .carousel-inner {
       border-radius: 15px;
     }
 

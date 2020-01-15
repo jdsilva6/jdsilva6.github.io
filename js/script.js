@@ -100,8 +100,7 @@ var Messenger = function(el){
         "Hello there.",
         'Hope you like it.',
         'Made it myself.',
-        'Thanks for sticking around!',
-        'ERTW'
+        'Thanks for sticking around!'
       ];
       
       setTimeout(m.animateIn, 150);

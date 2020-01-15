@@ -97,6 +97,7 @@ var Messenger = function(el){
       m.fadeBuffer = false;
       m.messages = [
         "Joshua D'Silva's Site",
+        "Hello there.",
         'Hope you like it.',
         'Made it myself.',
         'Thanks for sticking around!',

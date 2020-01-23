@@ -66,6 +66,8 @@ function toggleDarkLight(){
     $('.btn').addClass('darkbtn');
     $("#univeristy").attr("src", "assets/images/Engineer_Stacked_Reversed.png");
     $("#darkModeSwitch").attr("onclick", "toggleLightMode()");
+   /* $("#facebook").removeClass('fab fa-facebook-square').addClass('fab fa-facebook');
+    $("#github").removeClass('fab fa-github-square').addClass('fab fa-github');*/
 }
 
 function toggleLightMode(){

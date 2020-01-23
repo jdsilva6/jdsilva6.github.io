@@ -309,6 +309,10 @@
       color: #111;
     }
 
+    section div.divdark a{
+      color: #1384c8!important;
+    }
+
     body.dark-mode button {
       background-color: #eee;
       color: #111;
@@ -395,11 +399,7 @@
       transition: 1s all ease !important;
     }
 
-    .darkCard {
-      background: #807F83;
-      color: white;
-      transition: 1s all ease;
-    }
+    
 
     .darkCardHeader {
       background: #4f2683 !important;

@@ -313,6 +313,12 @@
       color: #1384c8!important;
     }
 
+    .darkCard {
+      background: #807F83;
+      color: white;
+      transition: 1s all ease;
+    }
+
     body.dark-mode button {
       background-color: #eee;
       color: #111;

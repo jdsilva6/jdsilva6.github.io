@@ -178,6 +178,7 @@
       width: 100% !important;
       /* Full width */
       z-index: 3;
+      opacity: 0.95;
     }
 
 

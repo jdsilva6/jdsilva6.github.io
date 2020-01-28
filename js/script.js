@@ -2,6 +2,11 @@ window.onload = function onloadfunction() {
   typeMyName();
 
   var date = new Date;
+
+  if(date.getHours()>18 || date.getHours()<7)
+  {
+    $('#darkModeSwitch').click();
+  }
   //if(date)
 }
 

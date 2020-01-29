@@ -1,16 +1,18 @@
 window.onload = function onloadfunction() {
   typeMyName();
 
+  
+  //if(date)
+}
+
+$(document).ready(function () {
+
   var date = new Date;
 
   if(date.getHours()>18 || date.getHours()<7)
   {
     $('#darkModeSwitch').click();
   }
-  //if(date)
-}
-
-$(document).ready(function () {
 
   $('.first-button').on('click', function () {
 

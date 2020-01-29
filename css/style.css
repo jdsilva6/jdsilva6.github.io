@@ -344,7 +344,7 @@ body.dark-mode a {
 }
 
 section div.divdark a {
-  color: #1384c8 !important;
+  color: rgb(230, 109, 219) !important;
 }
 
 .darkCard {

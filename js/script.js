@@ -88,6 +88,7 @@ function toggleDarkLight() {
   $("#github").addClass("lavender");
   $("#linkedin").addClass("lavender");
   $('#navColor').addClass("dark-mode");
+  $('#togglerIcon').addClass("dark-mode")
   $('.navbar-nav').children().children().css({"color":"lavender"});
   $('#Josh').addClass("lavender");
   $("#titleBreak").addClass('lavender-bg');
@@ -115,6 +116,7 @@ function toggleLightMode() {
   $("#facebook").removeClass("lavender");
   $("#github").removeClass("lavender");
   $("#linkedin").removeClass("lavender");
+  $('#togglerIcon').removeClass("dark-mode")
   $('#Josh').removeClass("lavender");
   $('.navbar-nav').children().children().css({"color":"black"});
   $('.navbar-nav').children().children().last().css({"color":"white"});

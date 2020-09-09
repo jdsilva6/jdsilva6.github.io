@@ -81,6 +81,7 @@ function toggleDarkLight() {
   $('.card-body').addClass('darkCard');
   $('.card-header').addClass('darkCardHeader');
   $('#jumbo').addClass('darkjumbo');
+  
  
   $("#univeristy").attr("src", "assets/images/Engineer_Stacked_Reversed.png");
   $("#darkModeSwitch").attr("onclick", "toggleLightMode()");
@@ -95,6 +96,7 @@ function toggleDarkLight() {
   $('.nav-link.active').addClass("lavender");
   $("#darkModeSwitch").attr("onclick", "toggleLightMode()");
   $('.btn').addClass('darkbtn');
+  $('#ContactMeBtn').addClass('lightbtn');
 
 }
 

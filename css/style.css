@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth !important;
   font-family: 'Open Sans', sans-serif !important;
+  overflow: hidden;
 }
 
 html,
@@ -14,6 +15,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  
 }
 
 .lavender {
@@ -33,6 +35,7 @@ section h1 {
 
 .card {
   position: unset !important;
+  background-color: none !important;
 }
 
 .languageCell {
@@ -186,7 +189,7 @@ section h1 {
 
 #jumbo {
   background-color: var(--light-bg-color);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .joblogo {
@@ -257,7 +260,7 @@ div.panel-group {
   padding: 1%;
   background-color: var(--light-bg-color);
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .stylizedDiv>p,
@@ -267,7 +270,7 @@ carousel {
 }
 
 .carousel-inner {
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .center {
@@ -449,6 +452,22 @@ body.light-mode button {
   background: #4f2683 !important;
   color: white !important;
 }
+
+#ContactMeBtn {
+  background-color: #af6bff;
+  border-radius: px;
+  text-decoration: none !important;
+  color: white !important;
+
+}
+
+#mastercontainer {overflow: visible;}
+
+.btn .btn-light > a {
+  color: black!important;
+  text-decoration: none !important;
+}
+
 
 /* Icon 1 */
 

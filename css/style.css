@@ -18,10 +18,6 @@ body {
   
 }
 
-.navbar-nav .nav-link{
-  padding-left: 50%!important;
-}
-
 .lavender {
   color: lavender;
   transition: 1s all ease;
@@ -30,10 +26,6 @@ body {
 .lavender-bg {
   background-color: lavender;
   transition: 1s all ease;
-}
-
-#darkModeSwitch{
-margin-top: 10%!important;
 }
 
 

@@ -99,7 +99,7 @@ function toggleDarkMode() {
   $('#ContactMeBtn').addClass('lightbtn');
   $('#ContactMeBtn > .a').attr('color','white');
   $('#emailMe').removeClass('btn btn-light');
-  $('#emailMe').addClass('btn btn-dark')
+  $('#emailMe').addClass('btn btn-dark');
   
 
 
@@ -132,7 +132,7 @@ function toggleLightMode() {
   $("#darkModeSwitch").attr("onclick", "toggleDarkLight()");
   $('.btn').removeClass('darkbtn')
   $('#emailMe').addClass('btn btn-light');
-  $('#emailMe').removeClass('btn btn-dark')
+  $('#emailMe').removeClass('btn btn-dark');
 }
 
 

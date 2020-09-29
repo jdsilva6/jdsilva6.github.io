@@ -35,7 +35,10 @@ section h1 {
 
 .card {
   position: unset !important;
-  background-color: none !important;
+}
+
+.container.dark > section > div> .card {
+  background-color: #000!important;
 }
 
 .languageCell {

@@ -463,8 +463,7 @@ body.light-mode button {
 
 #mastercontainer {overflow: visible;}
 
-.btn .btn-light > a {
-  color: black!important;
+.btn-light > a {
   text-decoration: none !important;
 }
 
@@ -644,6 +643,8 @@ body.light-mode button {
   top: 21px;
   left: 8px;
 }
+
+
 
 
 @media only screen and (max-width: 500px) {

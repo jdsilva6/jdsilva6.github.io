@@ -69,7 +69,7 @@ function CollapseAll() {
   $("#ExpandAll").attr("onclick", "ExpandAll()");
 }
 
-function toggleDarkLight() {
+function toggleDarkMode() {
   $('#darkModeSwitch').html("Light");
   $('#theme').addClass('dark');
   $('h2').addClass('darkmode');
@@ -97,6 +97,11 @@ function toggleDarkLight() {
   $("#darkModeSwitch").attr("onclick", "toggleLightMode()");
   $('.btn').addClass('darkbtn');
   $('#ContactMeBtn').addClass('lightbtn');
+  $('#ContactMeBtn > .a').attr('color','white');
+  $('#emailMe').removeClass('btn btn-light');
+  $('#emailMe').addClass('btn btn-dark')
+  
+
 
 }
 
@@ -126,6 +131,8 @@ function toggleLightMode() {
   $("#titleBreak").removeClass('lavender-bg');
   $("#darkModeSwitch").attr("onclick", "toggleDarkLight()");
   $('.btn').removeClass('darkbtn')
+  $('#emailMe').addClass('btn btn-light');
+  $('#emailMe').removeClass('btn btn-dark')
 }
 
 

@@ -98,10 +98,6 @@ function toggleDarkMode() {
   $('.btn').addClass('darkbtn');
   $('#ContactMeBtn').addClass('lightbtn');
   $('#ContactMeBtn > .a').attr('color','white');
-  $('#emailMe').removeClass('btn btn-light');
-  $('#emailMe').addClass('btn btn-dark');
-  
-
 
 }
 
@@ -129,10 +125,8 @@ function toggleLightMode() {
   $('.navbar-nav').children().children().last().css({"color":"white"});
   $('#navColor').removeClass("dark-mode");
   $("#titleBreak").removeClass('lavender-bg');
-  $("#darkModeSwitch").attr("onclick", "toggleDarkLight()");
+  $("#darkModeSwitch").attr("onclick", "toggleDarkMode()");
   $('.btn').removeClass('darkbtn')
-  $('#emailMe').addClass('btn btn-light');
-  $('#emailMe').removeClass('btn btn-dark');
 }
 
 

@@ -464,6 +464,10 @@ body.light-mode button {
   color: white !important;
 }
 
+#ExpandAll{
+padding: 2%;
+}
+
 #View{
   left:50%!important;
 }

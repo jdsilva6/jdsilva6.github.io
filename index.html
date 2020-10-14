@@ -103,7 +103,7 @@
 <body onload="animate()" id="body">
   <div class="container" id="theme">
 
-    <div class="jumbotron text-center" data-aos="slide-up" id="jumbo">
+    <div class="jumbotron text-center" id="jumbo">
       <section id="intro">
         <h1 id="messenger"><span></span></h1>
         <hr id="titleBreak">
@@ -683,9 +683,7 @@
   </div>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1200,
-    });
+    AOS.init();
     window.addEventListener('load', AOS.refresh);
   </script>
 </body>

@@ -5,7 +5,49 @@ ul {
 
 body {
     background-color: black;
+    margin-top: 5%;
 }
+
+.navbar-toggler-icon::after {
+    rotate: 90;
+  }
+  
+  
+  
+  .navbar {
+    overflow: hidden;
+    position: fixed !important;
+    background-color: white;
+    /* Set the navbar to fixed position */
+    top: 0 !important;
+    /* Position the navbar at the top of the page */
+    width: 100% !important;
+    /* Full width */
+    z-index: 3;
+    opacity: 0.95;
+    max-height: 5%!important;
+  }
+  
+  
+  .navbar.dark {
+    overflow: hidden;
+    position: fixed !important;
+    background-color: black;
+    /* Set the navbar to fixed position */
+    top: 0 !important;
+    /* Position the navbar at the top of the page */
+    width: 100% !important;
+    /* Full width */
+  }
+
+  .nav li {
+    display: inline-block;
+  }
+  
+  .nav-item :hover {
+    color: #4E2185 !important;
+    font-weight: 600;
+  }
 
 p {
     font-size: 1rem;
@@ -27,7 +69,7 @@ div > li {
 }
 
 
-ul > li {
+body > ul > li {
     border-radius: 10px;
     padding: 2%;
     margin: 2px;
@@ -38,7 +80,7 @@ ul > li {
     transition: 0.55s ease-in-out;
 }
 
-ul > li:hover{
+body > ul > li:hover{
     height: 25%;
     max-width: 550px;
     -webkit-transition:  0.55s ease-in-out;

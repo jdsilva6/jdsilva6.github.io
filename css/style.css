@@ -472,6 +472,10 @@ body.light-mode button {
   color: #4f2683;
 }
 
+.dark-mode #Viewership{
+  color: #4E2185;
+}
+
 #ContactMeBtn {
   background-color: #af6bff;
   border-radius: px;

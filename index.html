@@ -34,8 +34,8 @@
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script rel="preload"  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <title id="title">Joshua D'Silva's Website</title>
 
@@ -162,8 +162,8 @@
             <h5 class="mb-0">
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                 aria-controls="collapseOne">
-                <b class="stylized"><img class="joblogo" src="/assets/images/OMERSBox.png">&nbsp;&nbsp;&nbsp;OMERS,
-                  Business Analyst (Co-op)</b>
+               <div> <b class="stylized"><img class="joblogo" src="/assets/images/OMERSBox.png">&nbsp;&nbsp;&nbsp;OMERS,
+                Business Analyst (Co-op)</b></div>
               </button>
             </h5>
           </div>
@@ -187,9 +187,11 @@
             <h5 class="mb-0">
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                 aria-controls="collapse">
-                <b class="stylized"><img class="joblogo" src="/assets/images/oxfordbox.png">&nbsp;&nbsp;&nbsp;Oxford
-                  Properties Group,
-                  Web Developer (Co-op)</b>
+                <div>
+                  <b class="stylized"><img class="joblogo" src="/assets/images/oxfordbox.png">&nbsp;&nbsp;&nbsp;Oxford
+                    Properties Group,
+                    Web Developer (Co-op)</b>
+                </div>
               </button>
             </h5>
           </div>

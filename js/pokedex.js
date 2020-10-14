@@ -81,7 +81,7 @@ function search_pokedex() {
 
         for (i = 0; i < x.length; i++) {
             var clone = $(x[i]).clone();
-            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            if (!x[i].children[1].innerText.toLowerCase().includes(input)) {
                 //x[i].style.display = "none";
             } else {
                 //x[i].style.display = "list-item";

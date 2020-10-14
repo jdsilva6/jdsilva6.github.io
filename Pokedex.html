@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jdsilva6 SE 3316 Lab 1</title>
+    <meta name="description" content="">
+    <meta name="author" content="Joshua D'Silva">
+    <link href="http://pngimg.com/uploads/pokeball/pokeball_PNG29.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pokedex.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script defer src="js/pokedex.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- Place your content here -->
+   
+
+    <form id="form" actions="/" method="">
+        <h1>Pokedex</h1>
+        <h3>by <a href="https://www.joshuadsilva.com" target=”_blank”>Joshua D'Silva</a></h3>
+        <div>
+            <div id="error"></div>
+            <input id="searchbar" onclick="search_pokedex()" onkeypress="validateName(event)" onkeyup="search_pokedex()" type="text" name="search"
+                placeholder="Search for Pokemon by name..">
+            <button type="" class="btn btn-danger" onclick="search_pokedex_name_popup()" id="searchBtnName"> Search </button>
+
+            <br>
+            <br>
+
+            <input id="num_searchbar" onkeyup="search_pokedex_number_popup()" onkeypress="validateNumber(event)" type="text" name="search"
+                placeholder="Search for Pokemon by number..">
+            <button type="" class="btn btn-danger" onclick="search_pokedex_number_popup()" id="searchBtnNumber"> Search </button>
+
+        </div>
+    </form>
+
+
+
+    <ul id="pokedexList">
+        <li class="pokemon" id="bulba" name="Bulbasaur" title="There is a plant seed on its back right from the day this Pokémon is born. 
+        The seed
+        slowly grows larger.">
+            <img src="/assets/images/pokemon/1.png">
+            <p id="1"><b>Bulbasaur</b></p>
+            <p> There is a plant seed on its back right from the day this Pokémon is born. The seed
+                slowly grows larger.</p>
+        </li>
+        <li class="pokemon" id="ivy" name="Ivysaur" title="When the bulb on its back grows large, it appears to lose the ability to stand on its
+        hind legs.">
+            <img src="/assets/images/pokemon/2.png">
+            <p id="2"><b>Ivysaur</b></p>
+            <p> When the bulb on its back grows large, it appears to lose the ability to stand on its
+                hind legs.</p>
+        </li>
+        <li class="pokemon" id="venus" name="Venusaur" title="Its plant blooms when it is absorbing solar energy. It stays on the move to seek
+        sunlight.">
+            <img src="/assets/images/pokemon/3.png">
+            <p><b>Venusaur</b></p>
+            <p>Its plant blooms when it is absorbing solar energy. It stays on the move to seek
+                sunlight.</p>
+        </li>
+        <li class="pokemon" id="charmander" name="Charmander" title="It has a preference for hot things. When it rains, steam is said to spout from the
+        tip of its tail">
+            <img src="/assets/images/pokemon/4.png">
+            <p><b>Charmander</b></p>
+            <p> It has a preference for hot things. When it rains, steam is said to spout from the
+                tip of its tail.</p>
+        </li>
+        <li class="pokemon" id="Charmeleon" name="Charmeleon" title="It has a barbaric nature. In battle, it whips its fiery tail around and slashes away
+        with sharp claws">
+            <img src="/assets/images/pokemon/5.png">
+            <p><b>Charmeleon</b></p>
+            <p>It has a barbaric nature. In battle, it whips its fiery tail around and slashes away
+                with sharp claws.</p>
+        </li>
+        <li class="pokemon" id="Charizard" name="Charizard" title="It spits fire that is hot enough to melt boulders. It may cause forest fires by
+        blowing flames.">
+            <img src="/assets/images/pokemon/6.png">
+            <p><b>Charizard</b></p>
+            <p>It spits fire that is hot enough to melt boulders. It may cause forest fires by
+                blowing flames.</p>
+        </li>
+        <li class="pokemon" id="Squirtle" name="Squirtle" title="When it retracts its long neck into its shell, it squirts out water with vigorous
+        force.">
+            <img src="/assets/images/pokemon/7.png">
+            <p><b>Squirtle</b></p>
+            <p>When it retracts its long neck into its shell, it squirts out water with vigorous
+                force.</p>
+        </li>
+        <li class="pokemon" id="Wartortle" name="Wartortle" title="It is recognized as a symbol of longevity. If its shell has algae on it, that
+        Wartortle is very old.">
+
+            <img src="/assets/images/pokemon/8.png">
+            <p><b>Wartortle</b></p>
+            <p>It is recognized as a symbol of longevity. If its shell has algae on it, that
+                Wartortle is very old.</p>
+        </li>
+        <li class="pokemon" id="Blastoise" name="Blastoise" title="It crushes its foe under its heavy body to cause fainting. In a pinch, it will
+        withdraw inside its shell.">
+            <img src="/assets/images/pokemon/9.png">
+            <p><b>Blastoise</b></p>
+            <p> It crushes its foe under its heavy body to cause fainting. In a pinch, it will
+                withdraw inside its shell.</p>
+        </li>
+        <li class="pokemon" id="Caterpie" name="Caterpie" title="There is a plant seed on its back right from the day this Pokémon is born. The seed
+        slowly grows larger.">
+            <img src="/assets/images/pokemon/10.png">
+            <p><b>Caterpie</b></p>
+            <p>There is a plant seed on its back right from the day this Pokémon is born. The seed
+                slowly grows larger.</p>
+        </li>
+        <li class="pokemon" id="Metapod" name="Metapod" title="It is waiting for the moment to evolve. At this stage, it can only harden, so it
+        remains motionless to avoid attack.">
+            <img src="/assets/images/pokemon/11.png">
+            <p><b>Metapod</b></p>
+            <p> It is waiting for the moment to evolve. At this stage, it can only harden, so it
+                remains motionless to avoid attack.</p>
+        </li>
+        <li class="pokemon" id="Butterfree" name="Butterfree" title="In battle, it flaps its wings at great speed to release highly toxic dust into the
+        air.">
+            <img src="/assets/images/pokemon/12.png">
+            <p><b>Butterfree</b></p>
+            <p> In battle, it flaps its wings at great speed to release highly toxic dust into the
+                air.</p>
+        </li>
+        <li class="pokemon" id="Weedle" name="Weedle" title="Beware of the sharp stinger on its head. It hides in grass and bushes where it eats
+        leaves.">
+            <img src="/assets/images/pokemon/13.png">
+            <p><b>Weedle</b></p>
+            <p> Beware of the sharp stinger on its head. It hides in grass and bushes where it eats
+                leaves.</p>
+        </li>
+        <li class="pokemon" id="Kakuna" name="Kakuna" title="Able to move only slightly. When endangered, it may stick out its stinger and poison
+        its enemy.">
+            <img src="/assets/images/pokemon/14.png">
+            <p><b>Kakuna</b></p>
+            <p> Able to move only slightly. When endangered, it may stick out its stinger and poison
+                its enemy.</p>
+        </li>
+        <li class="pokemon" id="Beedrill" name="Beedrill" title="It has three poisonous stingers on its forelegs and its tail. They are used to jab
+        its enemy repeatedly.">
+            <img src="/assets/images/pokemon/15.png">
+            <p><b>Beedrill</b></p>
+            <p> It has three poisonous stingers on its forelegs and its tail. They are used to jab
+                its enemy repeatedly. </p>
+        </li>
+        <li class="pokemon" id="Pidgey" name="Pidgey" title="Very docile. If attacked, it will often kick up sand to protect itself rather than
+        fight back.">
+            <img src="/assets/images/pokemon/16.png">
+            <p><b>Pidgey</b></p>
+            <p> Very docile. If attacked, it will often kick up sand to protect itself rather than
+                fight back.</p>
+        </li>
+        </li>
+        <li class="pokemon" id="Pidgeotto" name="Pidgeotto" title="This Pokémon is full of vitality. It constantly flies around its large territory in
+        search of prey.">
+            <img src="/assets/images/pokemon/17.png">
+            <p><b>Pidgeotto</b></p>
+            <p> This Pokémon is full of vitality. It constantly flies around its large territory in
+                search of prey.</p>
+        </li>
+        <li class="pokemon" id="Pidgeot" name="Pidgeot" title="This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as
+        wicked weapons.">
+            <img src="/assets/images/pokemon/18.png">
+            <p><b>Pidgeot</b></p>
+            <p> This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as
+                wicked weapons.</p>
+        </li>
+        <li class="pokemon" id="Rattata" name="Rattata" title="Will chew on anything with its fangs. If you see one, you can be certain that 40 more
+        live in the area.">
+            <img src="/assets/images/pokemon/19.png">
+            <p><b>Rattata</b></p>
+            <p> Will chew on anything with its fangs. If you see one, you can be certain that 40 more
+                live in the area.</p>
+        </li>
+        <li class="pokemon" id="Raticate" name="Raticate"
+            title="Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.">
+            <img src="/assets/images/pokemon/20.png">
+            <p><b>Raticate</b></p>
+            <p> Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for
+                prey.
+            </p>
+        </li>
+
+    </ul>
+    <!-- Embedded JavaScript go here -->
+    <footer>
+        <div>
+            <b>Reference Links:</b>
+            <p>
+                <ol>
+                    <li>
+                        <a href="https://www.pokemon.com/us/pokedex/">https://www.pokemon.com/us/pokedex/</a>
+                    </li>
+                    <li>
+                        Pokemon data set from <a href="https://www.kaggle.com/kvpratama/pokemon-images-dataset">https://www.kaggle.com/kvpratama/pokemon-images-dataset</a> 
+                    </li>
+                    <li>
+                        Pokemon excel from <a href="https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/">https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/</a>
+                        
+                    </li>
+                </ol>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

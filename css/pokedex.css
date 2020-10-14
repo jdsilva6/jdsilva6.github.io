@@ -1,0 +1,270 @@
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+body {
+    background-color: black;
+}
+
+p {
+    font-size: 1rem;
+}
+
+p>b {
+    font-size: 1.25rem;
+}
+
+div > li {
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2px;
+    max-width: 500px;
+    height: 20%;
+    display: inline-block!important;
+    -webkit-transition:  0.55s ease-in-out;
+    transition: 0.55s ease-in-out;
+}
+
+
+ul > li {
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2px;
+    max-width: 500px;
+    height: 20%;
+    display: inline-block!important;
+    -webkit-transition:  0.55s ease-in-out;
+    transition: 0.55s ease-in-out;
+}
+
+ul > li:hover{
+    height: 25%;
+    max-width: 550px;
+    -webkit-transition:  0.55s ease-in-out;
+    transition: 0.55s ease-in-out;
+    margin: 2%;
+
+}
+
+form {
+    margin: 40px;
+}
+
+form>h1 {
+    color: red;
+}
+
+form>h3 {
+    color: #6d7a87
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 80%;
+}
+
+form>h3>a {
+    text-decoration: none !important;
+    margin-bottom: 5px;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+}
+
+#error{
+    color:#dd0000;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 50%;
+    display: none;
+}
+
+.modal-header {
+    padding: 10 px 15 px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.modal-body {
+    padding: 10px 15px;
+
+
+}
+
+#error{
+    color: red;
+}
+
+#dynamicPokedex{
+    max-width: 70%;
+    transition: 1s all ease;
+    padding: 2%;
+    margin: 2%;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#bulba {
+    background-color: lightgreen;
+
+}
+
+#ivy {
+    background-color: greenyellow;
+
+}
+
+#venus {
+    background-color: green;
+}
+
+#charmander {
+    background-color: orange;
+}
+
+#Charmeleon {
+    background-color: orangered;
+}
+
+#Charizard {
+    background-color: rgb(226, 39, 39);
+}
+
+#Squirtle {
+    background-color: lightblue;
+}
+
+#Wartortle {
+    background-color: #00ffff;
+}
+
+#Blastoise {
+    background-color: rgba(0, 81, 255, 0.938);
+    color: white;
+}
+
+#Caterpie {
+    background-color: rgb(216, 130, 238);
+}
+
+#Metapod {
+    background-color: rgb(202, 75, 219);
+}
+
+#Butterfree {
+    background-color: purple;
+}
+
+#Weedle {
+    background-color: yellow;
+}
+
+#Kakuna {
+    background-color: rgb(255, 196, 0);
+}
+
+#Beedrill {
+    background-color: rgb(255, 174, 0);
+}
+
+#Pidgey {
+    background-color: rgba(182, 121, 81, 0.671);
+}
+
+#Pidgeotto {
+    background-color: rgba(221, 129, 68, 0.671);
+}
+
+#Pidgeot {
+    background-color: rgba(252, 127, 44, 0.671);
+}
+
+#Rattata {
+    background-color: grey;
+}
+
+#Raticate {
+    background-color: darkgrey;
+    color: white;
+}
+
+#searchbar {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#searchBtn {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#num_searchbar {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus, 
+		change its width to 100% */
+input[type=text]:focus {
+    width: 70%;
+}
+
+#pokedexList {
+    font-size: 1.5em;
+}
+
+.pokemon {
+    display: list-item;
+    max-height: 20%;
+}

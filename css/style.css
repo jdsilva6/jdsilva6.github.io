@@ -270,10 +270,18 @@ div.panel-group {
 h3,
 carousel {
   padding: 10px;
+  
 }
+
+#ProjectCarousel{
+  transition: 1s all ease;
+}
+
+
 
 .carousel-inner {
   border-radius: 5px;
+ 
 }
 
 .center {
@@ -454,6 +462,14 @@ body.light-mode button {
 .darkbtn {
   background: #4f2683 !important;
   color: white !important;
+}
+
+#View{
+  left:50%!important;
+}
+
+#Viewership{
+  color: #4f2683;
 }
 
 #ContactMeBtn {

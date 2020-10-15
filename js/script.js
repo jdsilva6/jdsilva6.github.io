@@ -1,10 +1,3 @@
-window.onload = function onloadfunction() {
-  typeMyName();
-
-  
-  //if(date)
-}
-
 $(document).ready(function () {
 
   var date = new Date;
@@ -31,15 +24,6 @@ $(document).ready(function () {
 var i = 0;
 var name = "Welcome to Joshua D'Silva's Site";
 var speed1 = 50;
-
-function typeMyName() {
-  if (i < name.length) {
-    document.getElementById("WelcomeMsg").innerHTML += name.charAt(i);
-    i++;
-
-    setTimeout(typeMyName, speed1);
-  }
-}
 
 $(".rotate").click(function () {
   $(this).toggleClass("down");
@@ -143,11 +127,14 @@ var Messenger = function (el) {
     m.fadeBuffer = false;
     m.messages = [
       "Joshua D'Silva's Site",
-      "Welcome to my World.",
+      "Welcome/Bienvenue!",
       "Hello there.",
       'Hope you like it.',
       'Made it myself.',
-      'Thanks for sticking around!'
+      'Thanks for sticking around!',
+      'Hola',
+      'Bonjour',
+      'cout << "Hello" endl;'
     ];
 
     setTimeout(m.animateIn, 150);

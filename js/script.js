@@ -134,7 +134,7 @@ var Messenger = function (el) {
       'Thanks for sticking around!',
       'Hola',
       'Bonjour',
-      'cout << "Hello" endl;'
+      'cout << "Hello" <<endl;'
     ];
 
     setTimeout(m.animateIn, 150);

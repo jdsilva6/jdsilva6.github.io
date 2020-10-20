@@ -127,7 +127,8 @@ var Messenger = function (el) {
     m.fadeBuffer = false;
     m.messages = [
       "Joshua D'Silva's Site",
-      "Welcome/Bienvenue!",
+      "Welcome!",
+      "Bienvenue!",
       "Hello there.",
       'Hope you like it.',
       'Made it myself.',

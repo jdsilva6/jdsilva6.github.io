@@ -181,6 +181,15 @@ section h1 {
   color: #000;
 }
 
+.navbar-brand{
+  padding: 3%;
+  margin-right: 0!important;
+}
+
+.navbar-collapse{
+  padding: 3%;
+}
+
 #JoshDescription {
   color: #000;
 }
@@ -188,11 +197,13 @@ section h1 {
 #messenger {
   min-height: 50px;
   text-shadow: 0 2px 2px rgba(#000, 0.9);
+  padding-top:2%
 }
 
 #jumbo {
   background-color: var(--light-bg-color);
   border-radius: 5px;
+  padding:3%;
 }
 
 .joblogo {
@@ -306,6 +317,7 @@ carousel {
   width: 300px;
   padding-top: 1rem;
 }
+
 
 a.stylized {
   color: #B24DFF;
@@ -672,8 +684,42 @@ margin: 1%;
   left: 8px;
 }
 
+#togglerIcon{
+  margin:2%;
+}
 
+@media (min-width: 375px) {
 
+ 
+  .fab{
+    font-size: 3rem!important;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #darkModeSwitch{
+    margin:20%;
+
+  }
+
+  #Josh{
+    font-size: 1.4rem;
+  }
+
+  #navColor{
+    max-height: 6%;
+  }
+
+  #navlink{
+    font-size: 1.2rem;
+  
+  }
+  
+  .fab{
+    font-size: 3rem!important;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .joblogo {

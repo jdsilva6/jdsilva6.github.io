@@ -2,6 +2,8 @@ $(document).ready(function () {
 
   var date = new Date;
 
+ 
+
   if(date.getHours()>18 || date.getHours()<7)
   {
     $('#darkModeSwitch').click();
@@ -118,6 +120,10 @@ function toggleLightMode() {
 var Messenger = function (el) {
   'use strict';
   var m = this;
+
+  var date = new Date();
+
+  document.getElementById('year').innerHTML += " Joshua D'Silva " + date.getFullYear();
 
 
   m.init = function () {

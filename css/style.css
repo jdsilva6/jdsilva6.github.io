@@ -264,6 +264,14 @@ section h1 {
   font-weight: 600;
 }
 
+a.nav-link {
+  left:50%;
+}
+
+#Josh{
+  padding-left: 10%
+}
+
 .navbar-brand :hover {
   /* Put animation for name in here*/
 }
@@ -695,6 +703,7 @@ margin: 1%;
  
   .fab{
     font-size: 3rem!important;
+    left: 50%!important;
   }
 }
 
@@ -714,12 +723,15 @@ margin: 1%;
   }
 
   #navlink{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    
+    margin-top: 5;
   
   }
   
   .fab{
     font-size: 3rem!important;
+    left: 50%!important;
   }
 }
 

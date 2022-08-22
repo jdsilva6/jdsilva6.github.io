@@ -264,9 +264,7 @@ section h1 {
   font-weight: 600;
 }
 
-a.nav-link {
-  left:50%;
-}
+
 
 #Josh{
   padding-left: 10%
@@ -488,7 +486,8 @@ body.light-mode button {
 }
 
 #ExpandAll{
-margin: 1%;
+margin-left: 2%;
+
 }
 
 #View{
@@ -705,12 +704,15 @@ margin: 1%;
     font-size: 3rem!important;
     left: 50%!important;
   }
+
+
 }
 
 @media (min-width: 1024px) {
 
   #darkModeSwitch{
     margin:20%;
+    padding-left: 45%!important;
 
   }
 
@@ -733,6 +735,8 @@ margin: 1%;
     font-size: 3rem!important;
     left: 50%!important;
   }
+
+  
 }
 
 @media only screen and (max-width: 500px) {
@@ -743,5 +747,11 @@ margin: 1%;
   #messenger {
     min-height: 100px;
     text-shadow: 0 2px 2px rgba(#000, 0.9);
+  }
+
+  .nav-link {
+    margin-left: 42%!important;
+    font-size: 1.1rem;
+  
   }
 }
